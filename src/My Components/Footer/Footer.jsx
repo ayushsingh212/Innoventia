@@ -4,16 +4,15 @@ import { FaInstagram, FaFacebookF, FaWhatsapp, FaTwitter, FaYoutube,FaGoogle } f
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-purple-700 to-red-800 text-white py-10 px-6  dark:bg-black">
+    <footer className="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-10 px-6  dark:bg-black">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl font-bold mb-4 animate-fade-in">Dragon Castle Awaits</h1>
-        <p className="text-lg mb-6 text-gray-300">Explore the unknown Mystery. Connect with us and be part of the legend. || Ayush Devloper</p>
+        <h1 className="text-3xl font-bold mb-4 animate-fade-in">Student Management System</h1>
+        <p className="text-lg mb-6 text-gray-300">It is an simple student Management system || Ayush Devloper</p>
 
 
         <div className="flex justify-center gap-10 mb-8">
           <Link to="/" className="text-white text-lg hover:text-yellow-300 transition">Home</Link>
-          <Link to="/about" className="text-white text-lg hover:text-yellow-300 transition">About</Link>
-          <Link to="/contact" className="text-white text-lg hover:text-yellow-300 transition">Contact</Link>
+
         </div>
 
        
@@ -34,7 +33,7 @@ const Footer = () => {
         </div>
 
         <div className="text-sm text-gray-300">
-          <p>&copy;2025 Fantasy World. All right reserved.</p>
+          <p>&copy;2025 Student Manager. All right reserved.</p>
         </div>
       </div>
     </footer>
