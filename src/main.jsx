@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { createBrowserRouter, createHashRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import { createHashRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './My Components/Layout/Layout.jsx'
 import Home from './My Components/Home/Home.jsx'
 import Notes from './My Components/Notes/Notes.jsx'
@@ -12,7 +12,6 @@ import TodoForm from './GetTodo/TodoForm.jsx'
 import TodoList from './GetTodo/TodoList.jsx'
 import Task from './My Components/Task/Task.jsx'
 
-
 const router = createHashRouter(
   createRoutesFromElements(
     <Route  path='/' element={<Layout />}   >
@@ -21,19 +20,14 @@ const router = createHashRouter(
       <Route path = 'YT-Cont' element = {<Ytcont/>}/>
       <Route path = 'College' element = {<College/>}/>
       <Route path = 'task' element = {<Task/>}/>
-    
     </Route>
   ),
-
 )
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <TodoProvider>
-
-    <RouterProvider router={router}   />
-
-   </TodoProvider>
-
-
+    <TodoProvider>
+      <RouterProvider router={router} basename="/Student_M_S" />
+    </TodoProvider>
   </StrictMode>
 )
